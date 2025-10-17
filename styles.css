@@ -1,15 +1,15 @@
 /* General */
 /* Establece márgenes y relleno a cero y utiliza "border-box" para calcular el tamaño incluyendo bordes y relleno. */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 20;
     box-sizing: border-box;
 }
 
 /* Estilo global para el cuerpo del documento */
 body {
     font-family: Arial, sans-serif; /* Define la fuente principal del sitio. */
-    color: #ffffff; /* Establece el color del texto en blanco. */
+    color: #000000; /* Establece el color del texto en blanco. */
     line-height: 1.6; /* Mejora la legibilidad al establecer la altura de línea. */
     background: url('background.jpg') no-repeat center center fixed; /* Imagen de fondo centrada y fija. */
     background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio. */
@@ -21,31 +21,37 @@ header {
     position: fixed; /* Hace que el encabezado permanezca visible al hacer scroll. */
     top: 0; /* Lo posiciona en la parte superior de la página. */
     width: 100%; /* Abarca todo el ancho de la ventana. */
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo semitransparente para contraste. */
-    padding: 10px 20px; /* Espaciado interno para los elementos del encabezado. */
+    background-color: #FB8DB0; /* Fondo semitransparente para contraste. */
+    padding: 10px 10px; /* Espaciado interno para los elementos del encabezado. */
     display: flex; /* Utiliza diseño flexible para organizar los elementos horizontalmente. */
     justify-content: space-between; /* Distribuye los elementos en extremos opuestos. */
     align-items: center; /* Alinea verticalmente los elementos del encabezado. */
-    z-index: 1000; /* Asegura que el encabezado esté siempre encima de otros elementos. */
+    z-index: 100; /* Asegura que el encabezado esté siempre encima de otros elementos. */
+}
+#tituloprin{
+    background-color: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 20px;
 }
 
 /* Estilo del título en el encabezado */
 header h1 {
     font-size: 1.8em; /* Tamaño del texto del título. */
-    color: #00bfff; /* Azul claro para resaltar el título. */
+    color: #000000; /* Azul claro para resaltar el título. */
 }
 
 /* Navegación dentro del encabezado */
 header nav ul {
     list-style: none; /* Elimina los puntos de lista predeterminados. */
     display: flex; /* Muestra los elementos de la lista en una fila. */
-    gap: 20px; /* Espaciado entre los elementos de la lista. */
+    gap: 40px; /* Espaciado entre los elementos de la lista. */
 }
 
 /* Estilo de los enlaces de la barra de navegación */
 header nav ul li a {
     text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces. */
-    color: #ffffff; /* Color de texto blanco. */
+    color: #000000; /* Color de texto blanco. */
     font-weight: bold; /* Resalta los enlaces con texto en negrita. */
     padding: 5px 10px; /* Espaciado interno en los enlaces. */
     border-radius: 4px; /* Bordes redondeados para los enlaces. */
@@ -54,13 +60,13 @@ header nav ul li a {
 
 /* Efecto al pasar el cursor sobre los enlaces */
 header nav ul li a:hover {
-    background-color: #00bfff; /* Fondo azul claro al pasar el cursor. */
-    color: #000; /* Cambia el color del texto a negro. */
+    background-color: #F93472; /* Fondo azul claro al pasar el cursor. */
+    color: #FDBACF; /* Cambia el color del texto a negro. */
 }
 
 /* Espaciado superior para evitar solapamiento con el encabezado fijo */
 main {
-    padding-top: 80px; /* Ajusta el contenido para que no quede cubierto. */
+    padding-top: 90px; /* Ajusta el contenido para que no quede cubierto. */
 }
 
 /* Sección de contenido */
@@ -68,7 +74,7 @@ section {
     min-height: 100vh; /* Cada sección ocupa al menos el 100% de la altura de la ventana. */
     padding: 60px 20px; /* Espaciado interno para el contenido. */
     text-align: center; /* Centra el texto. */
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para legibilidad. */
+    background-color: #FDBACF; /* Fondo semitransparente para legibilidad. */
     margin-bottom: 20px; /* Espaciado entre secciones. */
 }
 
@@ -76,7 +82,7 @@ section {
 section h2 {
     font-size: 2.5em; /* Tamaño grande para destacar títulos. */
     margin-bottom: 20px; /* Espaciado inferior para separación del texto. */
-    color: #00bfff; /* Azul claro para los títulos. */
+    color: #000000; /* Azul claro para los títulos. */
 }
 
 /* Texto y listas dentro de las secciones */
@@ -89,7 +95,7 @@ section p, section ul {
 .form-container {
     width: 100%; /* Ocupa el 100% del ancho disponible. */
     max-width: 400px; /* Limita el ancho máximo del formulario. */
-    background-color: #ffffff; /* Fondo blanco para contraste. */
+    background-color: #FB8DB0; /* Fondo blanco para contraste. */
     padding: 20px; /* Espaciado interno del formulario. */
     border-radius: 8px; /* Bordes redondeados para un diseño más agradable. */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad. */
@@ -98,7 +104,7 @@ section p, section ul {
 /* Título del formulario */
 .form-container h2 {
     text-align: center; /* Centra el texto del título. */
-    color: #004a8f; /* Azul oscuro para resaltar. */
+    color: #F93472; /* Azul oscuro para resaltar. */
     margin-bottom: 20px; /* Espaciado inferior para separar del formulario. */
 }
 
@@ -107,7 +113,7 @@ section p, section ul {
     width: 100%; /* Ocupa todo el ancho del contenedor. */
     padding: 10px; /* Espaciado interno para comodidad al escribir. */
     margin-bottom: 15px; /* Espaciado inferior entre los campos. */
-    border: 1px solid #ccc; /* Borde gris claro. */
+    border: 1px solid #444142; /* Borde gris claro. */
     border-radius: 5px; /* Bordes redondeados. */
     font-size: 16px; /* Tamaño de texto estándar. */
 }
@@ -116,7 +122,7 @@ section p, section ul {
 .form-container button {
     width: 100%; /* Ocupa todo el ancho disponible. */
     padding: 10px; /* Espaciado interno. */
-    background-color: #004a8f; /* Fondo azul oscuro. */
+    background-color: #f93472; /* Fondo azul oscuro. */
     color: #ffffff; /* Texto blanco. */
     font-size: 16px; /* Tamaño del texto del botón. */
     border: none; /* Sin borde adicional. */
@@ -127,7 +133,7 @@ section p, section ul {
 
 /* Efecto al pasar el cursor sobre el botón */
 .form-container button:hover {
-    background-color: #00376b; /* Azul más oscuro al pasar el cursor. */
+    background-color: #000000; /* Azul más oscuro al pasar el cursor. */
 }
 
 /* Pie de página */
